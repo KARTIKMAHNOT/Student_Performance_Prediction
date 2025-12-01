@@ -30,7 +30,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/KARTIKMAHNOT/Student_Performance_Prediction/tree/main/backend/ml"
               className="social-link"
               target="_blank"
               rel="noopener noreferrer"
