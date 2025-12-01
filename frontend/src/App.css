@@ -1,0 +1,11 @@
+html,body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+   width: 100%;
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+}

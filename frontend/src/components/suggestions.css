@@ -1,0 +1,62 @@
+.suggestion-card {
+  width: 60%;
+  margin: 25px auto;
+  padding: 22px 28px;
+  border-radius: 14px;
+  background: rgba(0, 255, 255, 0.06);
+  border: 1px solid rgba(0, 255, 255, 0.35);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.15);
+  color: #eaffff;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s ease;
+}
+
+/* Fade-in animation after API loads */
+.suggestion-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title */
+.suggestion-card h2 {
+  margin-bottom: 14px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #39ffe6;
+}
+
+/* Beautiful bullet list */
+.suggestion-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.suggestion-card ul li {
+  margin: 10px 0;
+  padding-left: 12px;
+  border-left: 3px solid #00ffe4;
+  font-size: 17px;
+  line-height: 1.5em;
+  color: #c8fffe;
+  transition: 0.2s;
+}
+
+.suggestion-card ul li:hover {
+  transform: translateX(6px);
+  color: #ffffff;
+}
+
+/* AI thinking animation */
+.loader {
+  font-size: 17px;
+  color: #66fff8;
+  animation: blink 1.4s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.3; }
+}
