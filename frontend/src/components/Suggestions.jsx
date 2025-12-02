@@ -11,7 +11,7 @@ export default function Suggestions({
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8001/suggestion", {
+    fetch("https://student-performance-prediction-wcqw.onrender.com/suggestion", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

@@ -44,10 +44,18 @@ export default function PredictionSection() {
     setSuggest(false);
 
     try {
-      const [s, p] = await Promise.all([
-        axios.post("http://127.0.0.1:8001/predict-score", form),
-        axios.post("http://127.0.0.1:8001/predict-passfail", form),
-      ]);
+const [s, p] = await Promise.all([
+  axios.post(
+    "https://student-performance-prediction-wcqw.onrender.com/predict-score",
+    form
+  ),
+  axios.post(
+    "https://student-performance-prediction-wcqw.onrender.com/predict-passfail",
+    form
+  ),
+]);
+
+
 
       setScore(s.data.predicted_score);
       setStatus(p.data);
